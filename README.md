@@ -27,3 +27,11 @@ yarn add libero-tools --save
       });
     });
 ```
+
+## 3. randomColor
+> 点返回一个随机生成的16进制颜色，格式为 `#5f5f5f`
+```jsx
+    import { randomColor } from 'libero-tools';
+
+    <h1 style={{color:randomColor()}}>TEST</h1>
+```
