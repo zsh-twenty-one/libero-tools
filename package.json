@@ -1,11 +1,13 @@
 {
   "name": "libero-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "集合了自己整理的一些工具，方便开发时使用，减少造工具的痛苦过程",
   "main": "./lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "npx webpack -c ./webpack.config.js -w"
+    "devBuild": "npx webpack -c ./webpack.config.js -w",
+    "build": "npx webpack -c ./webpack.config.js",
+    "publish": "yarn build && npm publish"
   },
   "repository": {
     "type": "git",
