@@ -35,3 +35,45 @@ yarn add libero-tools --save
 
     <h1 style={{color:randomColor()}}>TEST</h1>
 ```
+
+## 4. type
+> 传入参数返回数据类型 
+
+> number | object | array | function | date | regexp | boolean | symbol | null | undefined
+```jsx
+    import { type } from 'libero-tools';
+
+    type({a:1}); // object
+    type(null); // null
+    ...
+```
+
+## 5. splitAryBySize
+> 将数组按照传入的大小进行数组分割 ,不改变原数组
+
+```jsx
+    import { splitAryBySize } from 'libero-tools';
+
+const a = [2, 3, 4, 5, 6, 7, 8, 9, 0];
+console.log(splitAryBySize(a, 4), a);
+// [ [ 2, 3, 4, 5 ], [ 6, 7, 8, 9 ], [ 0 ] ]
+```
+
+## 6. deepClone
+> 传入参数返回数据类型 
+
+```jsx
+    import { deepClone } from 'libero-tools';
+
+
+    const ary = [1, 2, { a: {c:1} }]
+
+    // use Object.assign
+     const aryclone = Object.assign([],ary)
+    console.log(ary[2].a === aryclone[2].a); // true
+
+    // use deepClone 
+    const aryclone = deepClone(ary)
+    console.log(ary[2].a === aryclone[2].a);// false
+    ...
+```
