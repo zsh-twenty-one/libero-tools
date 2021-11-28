@@ -66,4 +66,19 @@ declare module "libero-tools" {
     | "symbol"
     | "null"
     | "undefined";
+
+
+    
+  /**
+   * @desc 延迟、等待
+   * @param {number} timer 单位 ms {5秒 请传入 5000}
+   */
+  export function delays(timer: number): true;
+
+  /**
+   *@desc 获取时间戳
+   * @return {number} 时间戳
+   */
+  export function getTimer(): number;
+
 }

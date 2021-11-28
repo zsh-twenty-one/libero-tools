@@ -75,5 +75,23 @@ console.log(splitAryBySize(a, 4), a);
     // use deepClone 
     const aryclone = deepClone(ary)
     console.log(ary[2].a === aryclone[2].a);// false
-    ...
+```
+
+## 7. delays
+> 等待
+
+```jsx
+    import { delays } from 'libero-tools';
+
+    delays(5000); // 等待5秒
+
+```
+
+## 8. getTimer
+> 获取时间戳
+
+```jsx
+    import { getTimer } from 'libero-tools';
+    
+    getTimer();
 ```
