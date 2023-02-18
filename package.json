@@ -1,0 +1,29 @@
+{
+  "name": "libero-tools",
+  "version": "1.0.4",
+  "description": "集合了自己整理的一些工具，方便开发时使用，减少造工具的痛苦过程",
+  "main": "./lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "devBuild": "npx webpack -c ./webpack.config.js -w",
+    "build": "npx webpack -c ./webpack.config.js",
+    "oPublish": "yarn build && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "libero-tools"
+  },
+  "keywords": [
+    "tools、javascript、collection"
+  ],
+  "author": "libero  man",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "babel-loader": "^8.2.3",
+    "copy-webpack-plugin": "^10.0.0",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1"
+  }
+}
